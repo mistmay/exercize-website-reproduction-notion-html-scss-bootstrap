@@ -1,0 +1,170 @@
+@use '../abstracts/variables'as *;
+@use '../abstracts/mixins'as *;
+
+#first-second-section {
+    margin-top: $section-margin-top;
+}
+
+.second-section-type {
+    width: 100%;
+    padding: $section-margin-top 0;
+    border-top: 1px solid lightgray;
+}
+
+.second-section-type-top {
+    @include generalFlex(row, space-between, center);
+    width: 100%;
+    padding-right: 7.8vw;
+    margin-bottom: 60px;
+}
+
+.second-section-type-top-left {
+    @include generalFlex(column, space-between, flex-start);
+    gap: 30px;
+    width: 40%;
+}
+
+.second-section-type-top-right {
+    width: 25%;
+
+    img {
+        max-width: 100%;
+    }
+}
+
+#roadmap {
+    @include generalFlex(row, space-between, center);
+    width: 100%;
+    height: 600px;
+}
+
+#roadmap-left {
+    @include generalFlex(column, space-between, flex-start);
+    width: 15%;
+    height: 100%;
+}
+
+#roadmap-link {
+    @include generalFlex(column, space-between, flex-start);
+    width: 100%;
+    height: 40%;
+}
+
+#roadmap-sponsor {
+    @include generalFlex(column, space-between, flex-start);
+    width: 100%;
+    height: 9%;
+
+    img {
+        width: 50%;
+    }
+}
+
+#roadmap-right {
+    width: 70%;
+    height: 100%;
+
+    img {
+        @include imageBoxShadow;
+        height: 100%;
+        max-width: 100%;
+    }
+}
+
+#card-container {
+    width: 100%;
+    @include generalFlex(row, space-between, center);
+}
+
+.general-card {
+    width: 30%;
+    @include generalFlex(column, space-between, flex-start);
+    gap: 15px;
+
+    .after-gradient {
+        transition: 0.8s ease;
+    }
+
+    .after-gradient:hover::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+    }
+
+    img {
+        @include imageBoxShadow;
+    }
+
+    button {
+        display: none;
+        top: 40%;
+        left: 30%;
+        height: 38px;
+        background-color: rgba(0, 0, 0, 0.75);
+        border-radius: 38px;
+        font-size: 15px;
+        padding: 0px 20px;
+        min-width: 140px;
+        border: 2px solid rgb(255, 255, 255);
+        box-shadow: rgb(84 70 35 / 15%) 0px 2px 8px, rgb(84 70 35 / 15%) 0px 1px 3px;
+        color: white;
+    }
+
+    .after-gradient:hover>button {
+        display: block;
+    }
+}
+
+#arrow-container {
+    width: 110px;
+    margin-top: 30px;
+}
+
+.arrow {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+}
+
+#bigger {
+    width: 35%;
+}
+
+#blockquote-container {
+    width: 100%;
+    @include generalFlex(row, space-between, flex-start);
+}
+
+.blockquote-element {
+    width: 30%;
+    @include generalFlex(column, space-between, flex-start);
+    gap: 20px;
+}
+
+.blockquote-element>img {
+    max-width: 150px;
+    max-height: 25px;
+}
+
+.blockquote-author {
+    @include generalFlex(row, space-between, center);
+    gap: 10px;
+
+    img {
+        max-width: 60px;
+    }
+}
+
+.blockquote-author-details {
+    @include generalFlex(column, space-between, flex-start);
+    gap: 3px;
+}

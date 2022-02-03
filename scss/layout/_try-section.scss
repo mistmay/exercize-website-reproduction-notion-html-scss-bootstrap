@@ -1,0 +1,57 @@
+@use '../abstracts/variables'as *;
+@use '../abstracts/mixins'as *;
+
+#try-section {
+    width: 100%;
+    height: 640px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    padding-top: $section-margin-top;
+    @include generalFlex(row, space-between, center);
+}
+
+#try-content-left {
+    width: 260px;
+    height: 100%;
+    @include generalFlex(column, flex-end, flex-end);
+
+    img {
+        width: 260px;
+        height: 260px;
+    }
+}
+
+#try-content-right {
+    width: 65%;
+    height: 100%;
+    @include generalFlex(column, flex-start, flex-start);
+}
+
+#try-content-center {
+    text-align: center;
+
+    h2 {
+        margin: 20px 0;
+        font-size: 38px;
+    }
+
+    button {
+        margin: 20px 0 15px 0;
+        padding: 0 70px;
+    }
+
+    img {
+        width: 80px;
+        height: 80px;
+    }
+
+    a {
+        color: rgba(0, 0, 0, 0.6);
+        text-decoration: underline;
+
+        &:hover {
+            text-decoration: none;
+            color: red;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+@use '../abstracts/variables'as *;
+@use '../abstracts/mixins'as *;
+
+nav {
+    @include containerWidthMargin;
+    height: $nav-height;
+    z-index: 2;
+    background-color: white;
+}
+
+#nav-left {
+    gap: 30px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 7px;
+}
+
+#nav-right {
+    gap: 9px;
+}
+
+.divider {
+    width: 1px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#menu {
+    font-size: 30px;
+    display: none;
+}

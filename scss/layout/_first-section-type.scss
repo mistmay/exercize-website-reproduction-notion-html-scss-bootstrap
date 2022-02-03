@@ -1,0 +1,32 @@
+@use '../abstracts/variables'as *;
+@use '../abstracts/mixins'as *;
+
+.first-section-type {
+    @include generalFlex(row, space-between, center);
+    margin-top: $section-margin-top;
+    width: 100%;
+}
+
+.first-section-left {
+    @include generalFlex(column, space-between, flex-start);
+    width: 30%;
+    gap: 30px;
+
+    img {
+        max-height: 70px;
+    }
+}
+
+.first-section-right {
+    width: 60%;
+
+    video,
+    img {
+        @include imageBoxShadow;
+    }
+}
+
+#larger {
+    width: 160px;
+    height: 48px;
+}

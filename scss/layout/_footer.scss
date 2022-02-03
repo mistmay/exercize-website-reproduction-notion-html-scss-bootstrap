@@ -1,0 +1,63 @@
+@use '../abstracts/variables'as *;
+@use '../abstracts/mixins'as *;
+
+footer {
+    @include containerWidthMargin;
+}
+
+#big-footer {
+    padding: 60px 0;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+}
+
+#footer-container,
+#footer-container-link {
+    gap: 45px;
+}
+
+#footer-container {
+    width: 100%;
+
+    #footer-container-link {
+        width: 85%;
+    }
+}
+
+.footer-column {
+    @include generalFlex(column, space-between, flex-start);
+    gap: 10px;
+}
+
+#small-footer {
+    width: 100%;
+    margin: 40px 0;
+    @include generalFlex(row, space-between, center);
+    gap: 100px;
+}
+
+#foot-left,
+#foot-right {
+    @include generalFlex(row, space-between, center);
+}
+
+#foot-left {
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+#foot-right {
+    gap: 8px;
+
+    i {
+        color: rgba(0, 0, 0, 0.6);
+        width: 30px;
+        height: 30px;
+        @include generalFlex(row, center, center);
+
+        &:hover {
+            color: lightskyblue;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+    }
+}

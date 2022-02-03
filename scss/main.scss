@@ -1,0 +1,14 @@
+@use './vendors/bootstrap';
+@use './abstracts/variables';
+@use './abstracts/mixins';
+@use './vendors/bootstrap-icons';
+@use './base/reset';
+@use './base/typography';
+@use './components/buttons';
+@use './layout/navbar';
+@use './layout/hero';
+@use './layout/first-section-type';
+@use './layout/second-section-type';
+@use './layout/try-section';
+@use './layout/footer';
+@use './media-query/media-query';

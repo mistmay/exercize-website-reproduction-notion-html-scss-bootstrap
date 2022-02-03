@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Giuseppe Marchesiello">
+    <meta name="description" content="Exercize HTML CSS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://kit.fontawesome.com/ed84897914.js" crossorigin="anonymous"></script>
+    <title>Exercize HTML CSS</title>
+</head>
+
+<body>
+    <header>
+        <nav class="d-flex justify-content-between align-items-center position-fixed top-0 start-0 end-0">
+            <div id="nav-left" class="d-flex justify-content-between align-items-center">
+                <div>
+                    <a href="#">
+                        <svg width="87" height="30" viewBox="0 0 87 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1.805 1.294l16.6-1.226c2.039-.175 2.563-.057 3.845.875l5.299 3.733c.874.642 1.165.817 1.165 1.516v20.473c0 1.283-.466 2.042-2.097 2.158L7.34 29.99c-1.224.058-1.807-.117-2.448-.934L.99 23.982c-.7-.934-.99-1.633-.99-2.45V3.334c0-1.049.466-1.924 1.805-2.04z"
+                                fill="#fff"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M18.405.068l-16.6 1.226C.466 1.41 0 2.285 0 3.334v18.198c0 .817.29 1.516.99 2.45l3.902 5.074c.641.817 1.224.992 2.448.934l19.277-1.167c1.63-.116 2.097-.875 2.097-2.158V6.192c0-.663-.262-.854-1.033-1.42a85.473 85.473 0 01-.133-.096L22.25.943c-1.282-.932-1.806-1.05-3.845-.875zM7.776 5.857c-1.574.106-1.931.13-2.825-.597L2.678 3.452c-.231-.234-.115-.526.467-.584l15.958-1.166c1.34-.117 2.038.35 2.562.758l2.737 1.983c.117.059.408.408.058.408l-16.48.992-.204.014zM5.941 26.49V9.11c0-.759.233-1.109.931-1.168L25.8 6.834c.642-.058.932.35.932 1.108v17.264c0 .759-.117 1.401-1.165 1.459l-18.113 1.05c-1.048.058-1.513-.291-1.513-1.225zm17.88-16.448c.116.525 0 1.05-.525 1.11l-.873.173v12.832c-.758.408-1.456.641-2.039.641-.932 0-1.165-.292-1.863-1.166l-5.709-8.982v8.69l1.806.409s0 1.05-1.457 1.05l-4.017.233c-.117-.234 0-.817.407-.933l1.049-.291v-11.49L9.144 12.2c-.117-.525.174-1.283.99-1.342l4.31-.29 5.94 9.098v-8.049l-1.514-.174c-.117-.643.349-1.11.931-1.167l4.02-.234z"
+                                fill="#000"></path>
+                            <path
+                                d="M41.434 21.251v-7.91h.137l5.704 7.91h1.796V9.627h-1.997v7.902h-.137l-5.704-7.902H39.43V21.25h2.005zM54.715 21.429c2.635 0 4.238-1.724 4.238-4.584 0-2.852-1.611-4.584-4.238-4.584-2.618 0-4.237 1.74-4.237 4.584 0 2.86 1.595 4.584 4.237 4.584zm0-1.676c-1.393 0-2.19-1.063-2.19-2.908 0-1.837.797-2.908 2.19-2.908 1.386 0 2.183 1.071 2.183 2.908 0 1.845-.789 2.908-2.183 2.908zM60.778 10.28v2.215h-1.393v1.595h1.393v4.809c0 1.708.806 2.393 2.828 2.393.386 0 .757-.04 1.047-.097v-1.563c-.242.024-.395.04-.677.04-.837 0-1.208-.386-1.208-1.256V14.09h1.885v-1.595h-1.885v-2.216h-1.99zM65.85 21.251h1.99v-8.813h-1.99v8.813zm.991-10.27c.66 0 1.192-.533 1.192-1.201 0-.669-.531-1.209-1.192-1.209-.652 0-1.192.54-1.192 1.209 0 .668.54 1.2 1.192 1.2zM73.299 21.429c2.634 0 4.237-1.724 4.237-4.584 0-2.852-1.611-4.584-4.237-4.584-2.619 0-4.238 1.74-4.238 4.584 0 2.86 1.595 4.584 4.238 4.584zm0-1.676c-1.394 0-2.192-1.063-2.192-2.908 0-1.837.798-2.908 2.192-2.908 1.385 0 2.183 1.071 2.183 2.908 0 1.845-.79 2.908-2.183 2.908zM78.725 21.251h1.998V16.12c0-1.297.75-2.119 1.941-2.119 1.217 0 1.78.677 1.78 2.022v5.228h1.999v-5.703c0-2.103-1.072-3.287-3.037-3.287-1.314 0-2.2.604-2.619 1.587h-.137v-1.41h-1.925v8.813z"
+                                fill="#000"></path>
+                        </svg>
+                    </a>
+                </div>
+                <ul class="d-flex align-items-center">
+                    <li>
+                        <div class="nav-links justify-content-between align-items-center">
+                            <span>Product</span>
+                            <i class="bi bi-chevron-compact-down"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-links justify-content-between align-items-center">
+                            <span>Download</span>
+                            <i class="bi bi-chevron-compact-down"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-links justify-content-between align-items-center">
+                            <span>Solutions</span>
+                            <i class="bi bi-chevron-compact-down"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-links justify-content-between align-items-center">
+                            <span>Resources</span>
+                            <i class="bi bi-chevron-compact-down"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-links align-items-center">
+                            <a href="#">Pricing</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="nav-right" class="d-flex justify-content-between align-items-center">
+                <div class="nav-links align-items-center">
+                    <a href="#">Contact&nbsp;sales</a>
+                </div>
+                <div class="divider"></div>
+                <div class="nav-links align-items-center">
+                    <a href="#">Log&nbsp;in</a>
+                </div>
+                <button type="button" class="notion-button">Try Notion Free</button>
+                <i class="bi bi-list" id="menu"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="hero" class="mx-auto">
+            <div id="hero-text">
+                <h1>One workspace.<br />Every team.</h1>
+                <p>We’re more than a doc. Or a table.<br />Customize Notion to work the way you do.</p>
+                <button type="button" class="notion-button">Try Notion Free</button>
+                <div id="trusted-by">
+                    <span>TRUSTED BY TEAMS AT</span>
+                    <div class="w-100">
+                        <img src="https://www.notion.so/front-static/pages/product/pixar-logo.png" alt="pixar-logo">
+                        <img src="https://www.notion.so/front-static/pages/product/travelperk-logo.png"
+                            alt="travelperk-logo">
+                        <img src="https://www.notion.so/front-static/pages/product/cornershop-logo.png"
+                            alt="cornershop-logo">
+                        <img src="https://www.notion.so/front-static/pages/product/spotify-logo-v2.png"
+                            alt="spotify-logo">
+                        <img src="https://www.notion.so/front-static/pages/product/headspace-logo.png"
+                            alt="headspace-logo">
+                    </div>
+                </div>
+            </div>
+            <div id="hero-img">
+                <img src="https://www.notion.so/cdn-cgi/image/format=auto,width=640,quality=100/front-static/pages/product/home-page-hero-refreshed-v3.png"
+                    alt="people carrying documents" class="h-auto">
+            </div>
+        </section>
+        <section class="first-section-type mx-auto">
+            <div class="first-section-left">
+                <img
+                    src="https://www.notion.so/cdn-cgi/image/format=auto,width=256,quality=100/front-static/pages/product/spot/spot-team-up.png">
+                <h2>Team up without the chaos</h2>
+                <p>Connect your teams, projects, and docs in Notion — so you can bust silos and move as one.</p>
+            </div>
+            <div class="first-section-right">
+                <video autoplay loop muted>
+                    <source src="https://www.notion.so/front-static/pages/product/value-props/team-up-emoji-tile-v2.mp4"
+                        type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <section class="first-section-type mx-auto">
+            <div class="first-section-left">
+                <img
+                    src="https://www.notion.so/cdn-cgi/image/format=auto,width=256,quality=100/front-static/pages/product/spot/spot-context.png">
+                <h2>Never ask “What’s the context?” again</h2>
+                <p>
+                    Stale wikis aren't helpful. Neither are floating docs. In Notion, your daily work and knowledge live
+                    side by side — so you never lose context.
+                </p>
+            </div>
+            <div class="first-section-right">
+                <img
+                    src="https://www.notion.so/cdn-cgi/image/format=auto,width=1920,quality=100/front-static/pages/product/value-props/context-tile.png">
+            </div>
+        </section>
+        <section class="first-section-type mx-auto">
+            <div class="first-section-left">
+                <img src="https://www.notion.so/cdn-cgi/image/format=auto,width=384,quality=100/front-static/pages/product/spot/spot-workflow.png"
+                    id="larger">
+                <h2>Build the workflow you want</h2>
+                <p>Customize Notion to make it work the way you want it to.</p>
+                <p>Just drag and drop to craft the dashboard, website, doc, or system you need.</p>
+            </div>
+            <div class="first-section-right">
+                <video autoplay loop muted>
+                    <source src="https://www.notion.so/front-static/pages/product/value-props/workflow-tile-v2.mp4"
+                        type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <section class="first-section-type mx-auto">
+            <div class="first-section-left">
+                <img
+                    src="https://www.notion.so/cdn-cgi/image/format=auto,width=128,quality=100/front-static/pages/product/spot/spot-ecosystem.png">
+                <h2>Benefit from a global ecosystem of creators</h2>
+                <p>Get inspiration from thousands of community-made templates, integrations, and events.</p>
+                <p>You'll never want for resources or support.</p>
+            </div>
+            <div class="first-section-right">
+                <img
+                    src="https://www.notion.so/cdn-cgi/image/format=auto,width=1920,quality=100/front-static/pages/product/value-props/ecosystem-tile-v3.png">
+            </div>
+        </section>
+        <section class="second-section-type mx-auto" id="first-second-section">
+            <div class="second-section-type-top">
+                <div class="second-section-type-top-left">
+                    <h2>Built for endless uses.<br />Across all teams.</h2>
+                    <p>Notion solves problems common and unique to every team. These are just a few.</p>
+                    <button type="button" class="notion-button">Try Notion Free</button>
+                </div>
+                <div class="second-section-type-top-right">
+                    <img
+                        src="https://www.notion.so/cdn-cgi/image/format=auto,width=1920,quality=100/front-static/pages/product/bookshelf-spot.png">
+                </div>
+            </div>
+            <div id="roadmap">
+                <div id="roadmap-left">
+                    <div id="roadmap-link">
+                        <span>Company&nbsp;home</span>
+                        <span>Roadmap</span>
+                        <span>Design&nbsp;docs</span>
+                        <span>Engeneering&nbsp;wiki</span>
+                        <span>Meeting&nbsp;notes</span>
+                        <span>Website&nbsp;publishining</span>
+                    </div>
+                    <div id="roadmap-sponsor">
+                        <span>USED BY TEAMS AT</span>
+                        <img src="https://www.notion.so/front-static/shared/logos/color/multiverse.png">
+                    </div>
+                </div>
+                <div id="roadmap-right">
+                    <img
+                        src="https://www.notion.so/cdn-cgi/image/format=auto,width=1920,quality=100/front-static/pages/product/use-cases/multiverse.png">
+                </div>
+            </div>
+        </section>
+        <section class="second-section-type mx-auto">
+            <div class="second-section-type-top">
+                <div class="second-section-type-top-left">
+                    <h2>Start with a template.<br />Modify it however you need.</h2>
+                    <p>Choose from thousands of free, pre-built setups — for work and life.</p>
+                    <button type="button" class="notion-button-2">
+                        See all Templates
+                        <i class="bi bi-arrow-right-short"></i>
+                    </button>
+                </div>
+                <div class="second-section-type-top-right">
+                    <img
+                        src="https://www.notion.so/cdn-cgi/image/format=auto,width=1920,quality=100/front-static/pages/product/blocks-spot.png">
+                </div>
+            </div>
+            <div id="card-container">
+                <div id="card-1" class="general-card">
+                    <a href="#" class="position-relative after-gradient">
+                        <img
+                            src="https://www.notion.so/cdn-cgi/image/format=auto,width=1920,quality=100/front-static/shared/templates/company-home.png">
+                        <button type="button" class="position-absolute">View template</button>
+                    </a>
+                    <a href="#" class="card-link">Company home</a>
+                </div>
+                <div id="card-2" class="general-card">
+                    <a href="#" class="position-relative after-gradient">
+                        <img
+                            src="https://www.notion.so/cdn-cgi/image/format=auto,width=1920,quality=100/front-static/shared/templates/roadmap/en-US.png">
+                        <button type="button" class="position-absolute">View template</button>
+                    </a>
+                    <a href="#" class="card-link">Roadmap</a>
+                </div>
+                <div id="card-3" class="general-card">
+                    <a href="#" class="position-relative after-gradient">
+                        <img
+                            src="https://www.notion.so/cdn-cgi/image/format=auto,width=1920,quality=100/front-static/shared/templates/meeting-notes/en-US.png">
+                        <button type="button" class="position-absolute">View template</button>
+                    </a>
+                    <a href="#" class="card-link">Metting notes</a>
+                </div>
+            </div>
+            <div id="arrow-container" class="d-flex justify-content-between align-items-center">
+                <div class="arrow d-flex align-items-center justify-content-center">
+                    <i class="bi bi-arrow-left"></i>
+                </div>
+                <div class="arrow d-flex align-items-center justify-content-center">
+                    <i class="bi bi-arrow-right"></i>
+                </div>
+            </div>
+        </section>
+        <section class="second-section-type mx-auto">
+            <div class="second-section-type-top">
+                <div class="second-section-type-top-left">
+                    <h2>Used by the world’s most innovative teams</h2>
+                    <button type="button" class="notion-button-2">
+                        Read all customer stories
+                        <i class="bi bi-arrow-right-short"></i>
+                    </button>
+                </div>
+                <div class="second-section-type-top-right" id="bigger">
+                    <img
+                        src="https://www.notion.so/cdn-cgi/image/format=auto,width=1920,quality=100/front-static/shared/illustrations/teamwork.png">
+                </div>
+            </div>
+            <div id="blockquote-container">
+                <div class="blockquote-element">
+                    <img src="https://www.notion.so/front-static/shared/logos/color/match-v2.png">
+                    <blockquote>
+                        "Notion is a workspace that adapts to your needs.
+                        It’s as minimal or as powerful as you need it to be."
+                    </blockquote>
+                    <div class="blockquote-author">
+                        <img
+                            src="https://www.notion.so/cdn-cgi/image/format=auto,width=1920,quality=100/front-static/shared/people/rahim-makani.png">
+                        <div class="blockquote-author-details">
+                            <span>Rahim Makani</span>
+                            <p>Director of Product</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="blockquote-element">
+                    <img src="https://www.notion.so/front-static/shared/logos/color/loom.png">
+                    <blockquote>
+                        "Notion continues to be the easiest way to get information centralized somewhere and shout it
+                        out to someone else.
+                        For us, that’s extremely important because half our team is remote."
+                    </blockquote>
+                    <div class="blockquote-author">
+                        <img
+                            src="https://www.notion.so/cdn-cgi/image/format=auto,width=1920,quality=100/front-static/shared/people/vinay-hiremath.png">
+                        <div class="blockquote-author-details">
+                            <span>Vinay Hiremath</span>
+                            <p>Co-founder and Head of Engineering</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="blockquote-element">
+                    <img src="https://www.notion.so/front-static/shared/logos/color/figma.png">
+                    <blockquote>
+                        "Notion’s ease of use is one of its hallmarks.
+                        It helps you visually navigate content and remember where something is."
+                    </blockquote>
+                    <div class="blockquote-author">
+                        <img
+                            src="https://www.notion.so/cdn-cgi/image/format=auto,width=1920,quality=100/front-static/shared/people/marie-szuts.png">
+                        <div class="blockquote-author-details">
+                            <span>Marie Szuts</span>
+                            <p>Head of People Ops</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="try-section" class="mx-auto">
+            <div id="try-content-left">
+                <img
+                    src="https://www.notion.so/cdn-cgi/image/format=auto,width=640,quality=100/front-static/pages/product/sitting-character.png">
+            </div>
+            <div id="try-content-right">
+                <div id="try-content-center">
+                    <img
+                        src="https://www.notion.so/cdn-cgi/image/format=auto,width=256,quality=100/front-static/shared/icons/notion-app-icon-3d.png">
+                    <h2>Try Notion today</h2>
+                    <p>
+                        Get started for free.<br />
+                        Add your whole team as your needs grow.
+                    </p>
+                    <button type="button" class="notion-button">Try Notion Free</button>
+                    <p>
+                        On a big team?
+                        <a href="#">Contact sales</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="mx-auto" id="big-footer">
+            <div id="footer-container" class="flex-wrap d-flex justify-content-between align-items-start">
+                <div id="footer-logo" class="d-flex justify-content-center align-items-start flex-column">
+                    <svg width="87" height="30" viewBox="0 0 87 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1.805 1.294l16.6-1.226c2.039-.175 2.563-.057 3.845.875l5.299 3.733c.874.642 1.165.817 1.165 1.516v20.473c0 1.283-.466 2.042-2.097 2.158L7.34 29.99c-1.224.058-1.807-.117-2.448-.934L.99 23.982c-.7-.934-.99-1.633-.99-2.45V3.334c0-1.049.466-1.924 1.805-2.04z"
+                            fill="#fff"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M18.405.068l-16.6 1.226C.466 1.41 0 2.285 0 3.334v18.198c0 .817.29 1.516.99 2.45l3.902 5.074c.641.817 1.224.992 2.448.934l19.277-1.167c1.63-.116 2.097-.875 2.097-2.158V6.192c0-.663-.262-.854-1.033-1.42a85.473 85.473 0 01-.133-.096L22.25.943c-1.282-.932-1.806-1.05-3.845-.875zM7.776 5.857c-1.574.106-1.931.13-2.825-.597L2.678 3.452c-.231-.234-.115-.526.467-.584l15.958-1.166c1.34-.117 2.038.35 2.562.758l2.737 1.983c.117.059.408.408.058.408l-16.48.992-.204.014zM5.941 26.49V9.11c0-.759.233-1.109.931-1.168L25.8 6.834c.642-.058.932.35.932 1.108v17.264c0 .759-.117 1.401-1.165 1.459l-18.113 1.05c-1.048.058-1.513-.291-1.513-1.225zm17.88-16.448c.116.525 0 1.05-.525 1.11l-.873.173v12.832c-.758.408-1.456.641-2.039.641-.932 0-1.165-.292-1.863-1.166l-5.709-8.982v8.69l1.806.409s0 1.05-1.457 1.05l-4.017.233c-.117-.234 0-.817.407-.933l1.049-.291v-11.49L9.144 12.2c-.117-.525.174-1.283.99-1.342l4.31-.29 5.94 9.098v-8.049l-1.514-.174c-.117-.643.349-1.11.931-1.167l4.02-.234z"
+                            fill="#000"></path>
+                        <path
+                            d="M41.434 21.251v-7.91h.137l5.704 7.91h1.796V9.627h-1.997v7.902h-.137l-5.704-7.902H39.43V21.25h2.005zM54.715 21.429c2.635 0 4.238-1.724 4.238-4.584 0-2.852-1.611-4.584-4.238-4.584-2.618 0-4.237 1.74-4.237 4.584 0 2.86 1.595 4.584 4.237 4.584zm0-1.676c-1.393 0-2.19-1.063-2.19-2.908 0-1.837.797-2.908 2.19-2.908 1.386 0 2.183 1.071 2.183 2.908 0 1.845-.789 2.908-2.183 2.908zM60.778 10.28v2.215h-1.393v1.595h1.393v4.809c0 1.708.806 2.393 2.828 2.393.386 0 .757-.04 1.047-.097v-1.563c-.242.024-.395.04-.677.04-.837 0-1.208-.386-1.208-1.256V14.09h1.885v-1.595h-1.885v-2.216h-1.99zM65.85 21.251h1.99v-8.813h-1.99v8.813zm.991-10.27c.66 0 1.192-.533 1.192-1.201 0-.669-.531-1.209-1.192-1.209-.652 0-1.192.54-1.192 1.209 0 .668.54 1.2 1.192 1.2zM73.299 21.429c2.634 0 4.237-1.724 4.237-4.584 0-2.852-1.611-4.584-4.237-4.584-2.619 0-4.238 1.74-4.238 4.584 0 2.86 1.595 4.584 4.238 4.584zm0-1.676c-1.394 0-2.192-1.063-2.192-2.908 0-1.837.798-2.908 2.192-2.908 1.385 0 2.183 1.071 2.183 2.908 0 1.845-.79 2.908-2.183 2.908zM78.725 21.251h1.998V16.12c0-1.297.75-2.119 1.941-2.119 1.217 0 1.78.677 1.78 2.022v5.228h1.999v-5.703c0-2.103-1.072-3.287-3.037-3.287-1.314 0-2.2.604-2.619 1.587h-.137v-1.41h-1.925v8.813z"
+                            fill="#000"></path>
+                    </svg>
+                </div>
+                <div id="footer-container-link" class="d-flex justify-content-between align-items-start flex-wrap">
+                    <div class="footer-column">
+                        <span>Product</span>
+                        <a href="#">Overview</a>
+                        <a href="#">Pricing</a>
+                        <a href="#">Customer stories</a>
+                        <a href="#">Desktop apps</a>
+                        <a href="#">Mobile apps</a>
+                        <a href="#">Web Clipper</a>
+                    </div>
+                    <div class="footer-column">
+                        <span>Notion for</span>
+                        <a href="#">Enterprise</a>
+                        <a href="#">Small business</a>
+                        <a href="#">Personal use</a>
+                        <a href="#">Remote work</a>
+                        <a href="#">Startups</a>
+                        <a href="#">Education</a>
+                        <a href="#">Engineering</a>
+                        <a href="#">Product</a>
+                        <a href="#">Design</a>
+                        <a href="#">Managers</a>
+                    </div>
+                    <div class="footer-column">
+                        <span>Resources</span>
+                        <a href="#">Blog</a>
+                        <a href="#">Guides & tutorials</a>
+                        <a href="#">Help center</a>
+                        <a href="#">Webinars</a>
+                        <a href="#">Template gallery</a>
+                        <a href="#">Community</a>
+                        <a href="#">What’s new</a>
+                        <a href="#">Find a consultant</a>
+                        <a href="#">API docs</a>
+                        <a href="#">Switch from Evernote</a>
+                        <a href="#">Switch from Confluence</a>
+                    </div>
+                    <div class="footer-column">
+                        <span>Templates</span>
+                        <a href="#">Company home</a>
+                        <a href="#">Meeting notes</a>
+                        <a href="#">To-dos</a>
+                        <a href="#">Weekly agenda</a>
+                        <a href="#">Docs</a>
+                        <a href="#">Roadmap</a>
+                        <a href="#">Design system</a>
+                        <a href="#">New hire onboarding</a>
+                        <a href="#">Product wiki</a>
+                        <a href="#">Content calendar</a>
+                    </div>
+                    <div class="footer-column">
+                        <span>Company</span>
+                        <a href="#">About us</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Media kit</a>
+                        <a href="#">Contact sales</a>
+                        <a href="#">Contact support</a>
+                        <a href="#">Email us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mx-auto" id="small-footer">
+            <div id="foot-left">
+                <a href="#">
+                    <i class="bi bi-globe"></i>
+                    <span>English</span>
+                    <i class="bi bi-chevron-compact-down"></i>
+                </a>
+                <a href="#">Cookie&nbsp;settings</a>
+                <a href="#">Terms&nbsp;&&nbsp;privacy</a>
+                <a href="#">Security</a>
+                <a href="#">Status</a>
+                <p>©2022&nbsp;Notion&nbsp;Labs,&nbsp;Inc.</p>
+            </div>
+            <div id="foot-right">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </section>
+    </footer>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

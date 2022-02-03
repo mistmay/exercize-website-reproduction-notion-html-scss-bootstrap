@@ -1,0 +1,39 @@
+.nav-links {
+    height: 30px;
+    padding: 0 10px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(237, 236, 233, 255);
+    }
+}
+
+.notion-button {
+    border: 1px solid #be5643;
+    font-size: 14px;
+    color: white;
+    box-shadow: 0 1px 2px rgb(15 15 15 / 10%);
+    background-color: #e16259;
+    min-height: 36px;
+    padding: 1px 12px;
+    font-weight: 544;
+
+    &:hover {
+        background-color: rgba(207, 83, 74, 255);
+    }
+}
+
+.notion-button-2 {
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: rgba (4, 4, 4, 1);
+    padding: 0 12px;
+    min-height: 36px;
+    font-size: 14px;
+    font-weight: 544;
+    letter-spacing: 0.00065em;
+
+    &:hover {
+        background-color: rgba(239, 238, 236, 255);
+    }
+}

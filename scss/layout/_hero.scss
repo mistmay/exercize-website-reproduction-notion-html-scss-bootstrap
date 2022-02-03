@@ -1,0 +1,50 @@
+@use '../abstracts/variables'as *;
+@use '../abstracts/mixins'as *;
+
+main {
+    @include containerWidthMargin;
+    margin-top: $nav-height;
+}
+
+#hero {
+    @include generalFlex(row, center, center);
+    margin-top: $section-margin-top + 50px;
+    width: 100%;
+}
+
+#hero-text {
+    @include generalFlex(column, space-between, flex-start);
+    width: 50%;
+    gap: 30px;
+    text-align: left;
+}
+
+#trusted-by {
+    @include generalFlex(column, space-between, flex-start);
+    width: 80%;
+    margin-top: 10px;
+    gap: 15px;
+    font-size: 11px;
+    line-height: 1;
+    letter-spacing: 0.06em;
+    font-weight: 544;
+    color: rgba(0, 0, 0, 0.6);
+
+    div {
+        @include generalFlex(row, space-between, center);
+
+        img {
+            width: 15%;
+            height: auto;
+        }
+    }
+}
+
+#hero-img {
+    @include generalFlex(row, center, center);
+    width: 50%;
+
+    img {
+        width: 80%;
+    }
+}
